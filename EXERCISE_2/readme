@@ -1,0 +1,79 @@
+The system can:
+
+Rotate the satellite in four directions (North, South, East, West)
+
+Activate or deactivate solar panels
+
+Collect data when panels are active
+
+Monitor battery level and auto-deactivate panels to prevent overcharging
+
+Show the current status of the satellite
+
+The project uses object-oriented programming concepts and SOLID principles.
+
+Classes Used
+
+Satellite – Holds the satellite’s state (orientation, solar panels, data collected, battery).
+
+Battery – Tracks battery level and consumption.
+
+SolarPanel – Controls the activation or deactivation of solar panels.
+
+DataCollector – Simulates data collection from different sources (like countries or moons).
+
+Command Interface – Defines a common interface for all commands.
+
+RotateCommand, ActivatePanelsCommand, DeactivatePanelsCommand, CollectDataCommand, StatusCommand – Implement the command actions.
+
+InputHandler – Parses user inputs and returns the corresponding command.
+
+SimpleLogger – Logs events to the console.
+
+InvalidCommandException – Handles invalid commands.
+
+How the Program Works
+
+The program initializes the satellite with:
+
+Orientation = North
+
+Solar Panels = Inactive
+
+Data Collected = 0
+
+Battery = 100%
+
+The program continuously accepts commands from the user.
+
+Commands include:
+
+rotate <North|South|East|West>
+activatePanels
+deactivatePanels
+collectData
+status
+exit
+
+
+The satellite automatically handles battery usage and panel overcharge protection.
+
+Data is collected only when battery is sufficient.
+
+How to Run the Program
+
+Put all Java files in one folder.
+
+Open a terminal in that folder.
+
+Compile all Java files:
+
+javac *.java
+
+
+Run the program:
+
+java App.java
+
+
+Enter commands in the terminal to control the satellite

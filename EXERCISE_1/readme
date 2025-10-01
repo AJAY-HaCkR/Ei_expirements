@@ -1,0 +1,79 @@
+Behavioural Patterns – how objects talk to each other.
+
+Creational Patterns – how objects are made.
+
+Structural Patterns – how classes and objects are organized.
+
+1. Behavioural Patterns
+Observer Pattern – Satellite Telemetry Updates
+
+Idea: Multiple ground stations need to know when a satellite’s telemetry changes.
+
+How I did it:
+
+Satellite sends updates.
+
+GroundStation receives updates automatically.
+
+
+
+Strategy Pattern – Rocket Fuel Strategy
+
+Idea: Rockets can use different fuels (Liquid or Solid).
+
+How I did it:
+
+FuelStrategy is the interface.
+
+Rockets can choose a fuel strategy dynamically.
+
+
+
+2. Creational Patterns
+Singleton Pattern – Mission Logger
+
+Idea: Only one logger should exist for the whole mission.
+
+How I did it:
+
+MissionLogger has a private constructor and a static getInstance() method.
+
+Any part of the code can use the same logger.
+
+
+
+Factory Pattern – Spacecraft Factory
+
+Idea: Make different spacecraft (Shuttle or Probe) without creating them manually everywhere.
+
+How I did it:
+
+SpacecraftFactory decides which object to create.
+
+Shuttle and Probe are the actual spacecraft classes.
+
+
+
+3. Structural Patterns
+Adapter Pattern – Satellite Data Adapter
+
+Idea: Ground stations use old telemetry format, but satellites send new format.
+
+How I did it:
+
+TelemetryAdapter converts the new data so the old ground station can understand it.
+
+
+
+Decorator Pattern – Adding Spacecraft Modules
+
+Idea: A spacecraft can get extra modules like Camera or Solar Panels.
+
+How I did it:
+
+BasicModule is the normal spacecraft.
+
+Decorators like CameraDecorator and SolarPanelDecorator add features dynamically.
+
+
+
