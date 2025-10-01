@@ -1,15 +1,26 @@
+Satellite Command System – Rules
+
+>Always monitor your satellite’s battery; it drains with each action.
+>Activate solar panels to recharge when battery is low.
+>Solar panels will auto-deactivate when the battery is full to prevent overcharging.
+>Collect data only when the satellite has enough battery.
+>Rotate the satellite to North, South, East, or West to access different data sources.
+>Avoid leaving solar panels active unnecessarily to save battery.
+>Use the status command to check current orientation, panel status, data collected, and battery level.
+>Follow the correct command format; invalid commands will not be executed.
+>Continuously monitor battery and panel status during operation.
+>Exit the program safely using the exit command.
+
+fun fact:
+>you may get signals from countries and even from planets....
+
 The system can:
 
 Rotate the satellite in four directions (North, South, East, West)
-
 Activate or deactivate solar panels
-
 Collect data when panels are active
-
 Monitor battery level and auto-deactivate panels to prevent overcharging
-
 Show the current status of the satellite
-
 The project uses object-oriented programming concepts and SOLID principles.
 
 Classes Used
@@ -35,15 +46,10 @@ InvalidCommandException – Handles invalid commands.
 How the Program Works
 
 The program initializes the satellite with:
-
 Orientation = North
-
 Solar Panels = Inactive
-
 Data Collected = 0
-
 Battery = 100%
-
 The program continuously accepts commands from the user.
 
 Commands include:
